@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Popup</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+
+    <!-- Button to open the modal -->
+    <button id="openModalBtn" class="sub">Open Login Form</button>
+
+    <!-- Modal structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span> <!-- Close button -->
+
+            <div id="Log">Log in</div>
+            <div id="sub">
+                or create an account. <a href="signup.html">sign up</a>
+            </div>
+            <div class="in">
+                <div id="email">
+                    Email<br>
+                    <input type="email" class="email" name="email" placeholder="example@example.com">
+                </div>
+                <div id="pass">
+                    Password<br>
+                    <input type="password" class="password" name="password" placeholder="Enter password"><br>
+                    <a href="/">Forgot password?</a>
+                </div>
+                <input type="checkbox" id="rem"><label for="rem">Remember me</label>
+            </div>
+            <button class="sub">Log in</button>
+        </div>
+    </div>
+
+    <script src="log.js"></script>
+</body>
+</html>

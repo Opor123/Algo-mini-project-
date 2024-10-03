@@ -19,7 +19,6 @@ body {
  .hidden {
    opacity: 0;
    transform: translateY(50px); /* Move down initially to give upward motion */
-   
  }
  
  #head {
@@ -39,4 +38,8 @@ body {
    font-size: 16px;
    margin-top: 10px;
    color: #3d3d3d;
+ }
+
+ .home:hover, .new-interface:hover{
+   cursor:default;
  }

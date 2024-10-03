@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(255, 250, 243);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+}
+
+#email , #users, #pass, #confirm{
+    width: 80%;
+    background-color: antiquewhite;
+    border: none;
+    height:40px;
+}
+
+#email::placeholder{
+    color: rgb(214, 201, 184);
+}
+
+#btn{
+
+    font-size: 30px;
+    margin-top: 20px;
+    width:82%;
+    border: none;
+    background-color: rgb(216, 188, 96);
+    color: white;
+}
