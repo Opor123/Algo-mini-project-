@@ -50,7 +50,8 @@ window.addEventListener('click', function(e) {
 const allProgress = document.querySelectorAll('main .card .progress');
 
 allProgress.forEach(item => {
-  item.style.setProperty('--value', item.dataset.value);
+  const val = item.dataset.value;
+  item.style.setProperty('--width', val);
 })
 
 

@@ -338,7 +338,7 @@ main .card .progress::before {
     left: 0;
     height: 100%;
     background: var(--blue);
-    width: 40%; /* Cannot use --var*/
+    width: calc(var(--width) * 1%);
 }
 
 main .card .label {
