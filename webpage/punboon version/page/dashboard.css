@@ -330,6 +330,7 @@ main .card .progress {
     overflow-y: hidden;
     position: relative;
     margin-bottom: 4px;
+    position: relative;
 }
 main .card .progress::before {
     content: '';
@@ -338,7 +339,7 @@ main .card .progress::before {
     left: 0;
     height: 100%;
     background: var(--blue);
-    width: calc(var(--width) * 1%);
+    width: calc(var(--value) * 1%);
 }
 
 main .card .label {

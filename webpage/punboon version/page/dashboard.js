@@ -51,7 +51,7 @@ const allProgress = document.querySelectorAll('main .card .progress');
 
 allProgress.forEach(item => {
   const val = item.dataset.value;
-  item.style.setProperty('--width', val);
+  item.style.setProperty('--value', val);
 })
 
 
