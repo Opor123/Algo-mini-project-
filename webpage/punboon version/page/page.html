@@ -1,46 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweets & Stocks</title>
-    <title>page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/ee4e8763f1.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <div class="pinterest">
-            <h1>POPP</h1>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#" class="logo"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#" class="home">main page</a></li>
-                    <li><a href="#" class="items"><i class="fas fa-bell"></i></a></li>
-                    <li><a href="#" class="items"><i class="far fa-comment-dots"></i></a></li>
-                </ul>
-            </nav>
-            <div class="search">
-                <i class="fas fa-search"></i>
-                <input type="search" name="" placeholder="Search" id="search-input">
-            </div>
-            <div class="toggle-container">
-                
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ee4e8763f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>POPP-UP</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#">Sweets Recipes</a>
+            <ul class="dropdown">
+              <li><a href="#">Cakes</a></li>
+              <li><a href="#">Pastries</a></li>
+              <li><a href="#">Candies</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Stocks Investment</a>
+            <ul class="dropdown">
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Finance</a></li>
+              <li><a href="#">Healthcare</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="#" class="login-btn">Log In</a>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button><i class="fa fa-search"></i></button>
         </div>
+        <button class="menu-btn"><i class="fa fa-bars"></i></button>
+      </div>
     </header>
 
-    <main>
-        <section class="masonry-grid">
-        </section>
-    </main>
-    <script src="main.js"></script>
-</body>
+    <section class="content">
+      <div class="section-title">Popular Sweets Recipes</div>
+      <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <div class="section-title">Popular Stocks Investment</div>
+      <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="con">
+        <p>Contract us</p>
+      </div>
+      <div class="name">
+        <p>Punboon</p>
+        <p>Tang</p>
+        <p>PP</p>
+        <p>O'por</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

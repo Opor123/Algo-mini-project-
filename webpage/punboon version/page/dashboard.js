@@ -106,9 +106,6 @@ sidebar.addEventListener('mouseenter', function() {
     });
   }
 });
-
-
-
 // PROFILE DROPDOWN
 const profile = document.querySelector('nav .profile');
 const imgProfile = profile.querySelector('img');
@@ -117,10 +114,6 @@ const dropdown = profile.querySelector('.profile-link');
 imgProfile.addEventListener('click', function() {
     dropdown.classList.toggle('show');
 });
-
-
-
-
 //MENU
 const allMenu = document.querySelectorAll('main .content-data .head .menu');
 
@@ -132,9 +125,6 @@ allMenu.forEach(item => {
     menuLink.classList.toggle('show');
   });
 });
-
-
-
 // WINDOW CLICK EVENT
 window.addEventListener('click', function(e) {
   if (e.target !== imgProfile && !profile.contains(e.target)) {
@@ -154,11 +144,6 @@ window.addEventListener('click', function(e) {
       }
   });
 });
-
-
-
-
-
 // PROGRESSBAR
 const allProgress = document.querySelectorAll('main .card .progress');
 
@@ -166,15 +151,6 @@ allProgress.forEach(item => {
   const val=item.dataset.value;
   item.style.setProperty('--value', val);
 })
-
-
-
-
-
-
-
-
-
 //APEXCHART
 var options = {
     series: [{
