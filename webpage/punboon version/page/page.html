@@ -4,21 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweets & Stocks</title>
+    <!-- Link to external CSS for styling -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Google Font for a modern, elegant look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/ee4e8763f1.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Header section containing the logo, navigation bar, and user actions (login, search, mobile menu) -->
     <header class="header">
       <div class="logo">
-        <h1>POPP-UP</h1>
+        <!-- Site logo or brand name -->
+        <h1>SWEETS & STOCKS</h1>
       </div>
       <nav class="nav">
+        <!-- Navigation links for recipes and investments -->
         <ul>
           <li>
             <a href="#">Sweets Recipes</a>
+            <!-- Dropdown menu for Sweets Recipes -->
             <ul class="dropdown">
               <li><a href="#">Cakes</a></li>
               <li><a href="#">Pastries</a></li>
@@ -27,6 +37,7 @@
           </li>
           <li>
             <a href="#">Stocks Investment</a>
+            <!-- Dropdown menu for Stocks Investment -->
             <ul class="dropdown">
               <li><a href="#">Tech</a></li>
               <li><a href="#">Finance</a></li>
@@ -35,27 +46,36 @@
           </li>
         </ul>
       </nav>
+      <!-- User actions: login, search, and mobile menu toggle -->
       <div class="user-actions">
+        <!-- Login button -->
         <a href="#" class="login-btn">Log In</a>
+        <!-- Search bar with text input and button -->
         <div class="search-bar">
           <input type="text" placeholder="Search" />
           <button><i class="fa fa-search"></i></button>
         </div>
+        <!-- Mobile menu button (hamburger icon) -->
         <button class="menu-btn"><i class="fa fa-bars"></i></button>
       </div>
     </header>
 
+    <!-- Main content section with grids for popular sweets and stocks -->
     <section class="content">
+      <!-- Section for popular sweets recipes -->
       <div class="section-title">Popular Sweets Recipes</div>
       <div class="grid">
+        <!-- Placeholder boxes for content items -->
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
       </div>
 
+      <!-- Section for popular stocks investment -->
       <div class="section-title">Popular Stocks Investment</div>
       <div class="grid">
+        <!-- Placeholder boxes for content items -->
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -63,18 +83,12 @@
       </div>
     </section>
 
+    <!-- Footer section -->
     <footer class="footer">
-      <div class="con">
-        <p>Contract us</p>
-      </div>
-      <div class="name">
-        <p>Punboon</p>
-        <p>Tang</p>
-        <p>PP</p>
-        <p>O'por</p>
-      </div>
+      <p>&copy; 2024 Sweets & Stocks</p>
     </footer>
 
+    <!-- Link to external JavaScript for interactivity -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,132 +1,114 @@
+/* Reset margins and paddings for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set default font family and colors */
 body {
-  font-family: "Playfair Display", serif;
-  background-color: #fff;
-  color: #333;
+  font-family: 'Playfair Display', serif; /* Elegant serif font for a classic feel */
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color for contrast */
 }
 
+/* Header styling: flexbox for layout, light background color */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 
-.header:hover {
-  cursor: default;
-}
-
+/* Logo (Site Name) styling */
 .logo h1 {
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 36px; /* Large font for the logo */
+  font-weight: 500; /* Medium font weight */
 }
 
+/* Navigation bar styling */
 .nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+  list-style-type: none; /* Remove bullet points from list */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 20px; /* Space between menu items */
 }
 
-.nav ul li {
-  position: relative;
-}
-
-.nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
+/* Dropdown menu hidden by default */
 .nav ul li ul.dropdown {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Show dropdown menu on hover */
 .nav ul li:hover ul.dropdown {
   display: block;
 }
 
+/* Dropdown menu item styling */
 .nav ul li ul.dropdown li {
   padding: 10px;
 }
 
-.nav ul li ul.dropdown li a {
-  color: #333;
-}
-
+/* Login button and search bar layout */
 .user-actions {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.login-btn {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-}
-
-input {
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
+/* Style the search bar input */
 .search-bar input {
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: 5px 10px; /* Padding inside the search bar */
+  font-size: 16px; /* Medium font size */
 }
 
+/* Search button styling */
 .search-bar button {
-  background-color: #f0e2d0;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
+  background-color: #f0e2d0; /* Light beige background */
+  border: none; /* Remove border */
+  padding: 8px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Mobile menu button (hamburger icon) styling */
 .menu-btn {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+  background-color: transparent; /* No background */
+  border: none; /* Remove border */
+  font-size: 24px; /* Large size for mobile icon */
+  cursor: pointer; /* Pointer cursor */
 }
 
+/* Main content section */
 .content {
-  padding: 40px;
+  padding: 40px; /* Spacing around the content */
 }
 
+/* Section titles (Popular Sweets/Stocks) styling */
 .section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-size: 24px; /* Medium-large font size */
+  margin-bottom: 20px; /* Space below the title */
+  font-weight: bold; /* Bold title text */
 }
 
+/* Grid layout for content items */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid layout */
+  gap: 20px; /* Spacing between grid items */
 }
 
+/* Placeholder box styling */
 .box {
-  background-color: #eddcd2;
-  height: 200px;
+  background-color: #eddcd2; /* Light beige color for boxes */
+  height: 200px; /* Fixed height for placeholders */
 }
 
+/* Footer styling */
 .footer {
   padding: 20px;
   text-align: center;
@@ -144,17 +126,18 @@ input {
     
 }
 
+/* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .nav ul {
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column; /* Stack navigation vertically */
+      gap: 10px;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller boxes for mobile */
   }
 
   .section-title {
-    text-align: center;
+      text-align: center; /* Center align titles on small screens */
   }
 }
